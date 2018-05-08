@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--My Cool Screen-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="hua_week4tutorial_project" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,14 +25,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RNb-st-4T4">
-                                <rect key="frame" x="0.0" y="360" width="375" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFV-Jd-Dah">
-                                <rect key="frame" x="274" y="398" width="85" height="33"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFV-Jd-Dah">
+                                <rect key="frame" x="281" y="398" width="69" height="33"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <state key="normal" title="Continue"/>
                                 <connections>
@@ -40,27 +34,58 @@
                                     <segue destination="Vdd-Kx-8FB" kind="show" identifier="SecondViewSegue" id="wsA-FH-he3"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" contentHorizontalAlignment="fill" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RNb-st-4T4">
+                                <rect key="frame" x="16" y="359.5" width="334" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eQy-dK-V5w" secondAttribute="trailing" constant="224" id="0Lc-V6-GlL"/>
-                            <constraint firstItem="yFV-Jd-Dah" firstAttribute="top" secondItem="RNb-st-4T4" secondAttribute="bottom" constant="12" id="7MD-s4-vsX"/>
+                            <constraint firstItem="RNb-st-4T4" firstAttribute="top" secondItem="eQy-dK-V5w" secondAttribute="bottom" constant="16" id="CCF-5X-5BD"/>
                             <constraint firstItem="eQy-dK-V5w" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="HZT-hB-bv4"/>
-                            <constraint firstItem="yFV-Jd-Dah" firstAttribute="trailing" secondItem="RNb-st-4T4" secondAttribute="trailing" id="VaX-uB-Frx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RNb-st-4T4" secondAttribute="trailing" constant="104" id="HlU-Zv-4KS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RNb-st-4T4" secondAttribute="trailing" constant="211" id="OCH-LX-EBQ">
+                                <variation key="widthClass=regular" constant="210"/>
+                            </constraint>
+                            <constraint firstItem="yFV-Jd-Dah" firstAttribute="top" secondItem="RNb-st-4T4" secondAttribute="bottom" constant="8" id="PGL-Yp-SFl"/>
+                            <constraint firstItem="RNb-st-4T4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VGQ-23-4ov"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yFV-Jd-Dah" secondAttribute="trailing" constant="25" id="aUN-Li-f2U"/>
                             <constraint firstItem="eQy-dK-V5w" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e6C-KF-qjJ"/>
-                            <constraint firstItem="eQy-dK-V5w" firstAttribute="leading" secondItem="RNb-st-4T4" secondAttribute="leading" id="kao-8e-S0D"/>
-                            <constraint firstItem="RNb-st-4T4" firstAttribute="top" secondItem="eQy-dK-V5w" secondAttribute="bottom" constant="16" id="uhl-nb-hDg"/>
+                            <constraint firstItem="yFV-Jd-Dah" firstAttribute="trailing" secondItem="RNb-st-4T4" secondAttribute="trailing" id="qW3-1B-X11">
+                                <variation key="widthClass=regular" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yFV-Jd-Dah" secondAttribute="trailing" constant="25" id="zCg-96-KFL"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="HlU-Zv-4KS"/>
+                                <exclude reference="OCH-LX-EBQ"/>
+                                <exclude reference="zCg-96-KFL"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="HlU-Zv-4KS"/>
+                                <exclude reference="OCH-LX-EBQ"/>
+                                <exclude reference="aUN-Li-f2U"/>
+                                <exclude reference="zCg-96-KFL"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="0f2-P1-6sw"/>
+                    <navigationItem key="navigationItem" title="My Cool Screen" id="0f2-P1-6sw">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="9kZ-jM-Q7F"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="nameField" destination="RNb-st-4T4" id="f8u-ka-AcF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="450" y="158"/>
+            <point key="canvasLocation" x="448.4375" y="157.6171875"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="h6R-ih-m9S">
